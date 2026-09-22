@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,300;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-acecan-green: #1b5e35;
+  --color-acecan-green-dark: #0f3b20;
+  --color-acecan-green-deep: #0a2614;
+  --color-acecan-green-light: #2d7a4a;
+  --color-acecan-green-pale: #e8f5ec;
+  --color-acecan-yellow: #f0b429;
+  --color-acecan-yellow-light: #fde68a;
+  --color-acecan-cream: #f8f5f0;
+  --color-acecan-dark: #111815;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #fff;
+  color: #111815;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* scrollbar hide */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 3px; }
