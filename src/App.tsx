@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logoAcecan from './assets/logo-acecan.jpeg'
+import logoAcecan from './assets/logoAcecan.jpeg'
 
 const NAV_LINKS = [
   { label: 'INÍCIO', href: '#inicio' },
