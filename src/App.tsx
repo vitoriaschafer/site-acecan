@@ -829,7 +829,7 @@ function BdmLogo() {
     <img
       src={logoBdmDigital}
       alt="BDM Digital"
-      className="h-16 w-auto object-contain"
+      className="max-h-full max-w-full object-contain"
     />
   )
 }
@@ -839,7 +839,7 @@ function MetaAgroLogo() {
     <img
       src={logoMetaAgro}
       alt="Meta Agro"
-      className="h-20 w-20 object-contain"
+      className="max-h-full max-w-full object-contain"
     />
   )
 }
@@ -870,11 +870,11 @@ function Partners() {
         <div className="w-full h-px bg-black/10 mb-8" />
 
         {/* BDM Digital card */}
-        <div className="bg-white border-2 border-[#f0b429]/60 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div className="bg-white border-2 border-[#f0b429]/60 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 sm:min-h-[212px]">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 h-full">
 
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 w-28 h-20 flex items-center justify-center">
               <BdmLogo />
             </div>
 
@@ -916,11 +916,11 @@ function Partners() {
         </div>
 
         {/* Meta Agro card */}
-        <div className="bg-white border-2 border-[#f0b429]/60 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 mt-6">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <div className="bg-white border-2 border-[#f0b429]/60 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 mt-6 sm:min-h-[212px]">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 h-full">
 
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 w-28 h-20 flex items-center justify-center">
               <MetaAgroLogo />
             </div>
 
