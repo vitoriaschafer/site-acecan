@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import logoAcecan from './assets/logoAcecan.jpeg'
+import logoBdmDigital from './assets/logo-bdm-digital.jpeg'
 
 const NAV_LINKS = [
   { label: 'INÍCIO', href: '#inicio' },
@@ -824,13 +825,11 @@ function EventosModal({ onClose }: { onClose: () => void }) {
 
 function BdmLogo() {
   return (
-    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="80" height="80" rx="16" fill="#0d1f3c" />
-      <circle cx="40" cy="40" r="30" stroke="#f0b429" strokeWidth="2.5" />
-      <circle cx="40" cy="40" r="24" stroke="#f0b429" strokeWidth="1" strokeDasharray="3 2" />
-      <text x="40" y="37" textAnchor="middle" fill="#f0b429" fontSize="13" fontWeight="800" fontFamily="Inter, sans-serif" letterSpacing="1">BDM</text>
-      <text x="40" y="51" textAnchor="middle" fill="#f0b429" fontSize="8" fontWeight="600" fontFamily="Inter, sans-serif" letterSpacing="2">DIGITAL</text>
-    </svg>
+    <img
+      src={logoBdmDigital}
+      alt="BDM Digital"
+      className="h-16 w-auto object-contain"
+    />
   )
 }
 
