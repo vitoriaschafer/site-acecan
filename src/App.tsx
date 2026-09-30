@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import logoAcecan from './assets/logoAcecan.jpeg'
 import logoBdmDigital from './assets/logo-bdm-digital.jpeg'
+import logoMetaAgro from './assets/logo-meta-agro.jpeg'
 
 const NAV_LINKS = [
   { label: 'INÍCIO', href: '#inicio' },
@@ -833,6 +834,16 @@ function BdmLogo() {
   )
 }
 
+function MetaAgroLogo() {
+  return (
+    <img
+      src={logoMetaAgro}
+      alt="Meta Agro"
+      className="h-20 w-20 object-contain"
+    />
+  )
+}
+
 function Partners() {
   return (
     <section id="parceiros" className="bg-[#f8f5f0] py-20 px-6 lg:px-10">
@@ -894,6 +905,52 @@ function Partners() {
             <div className="flex-shrink-0 w-full sm:w-auto">
               <a
                 href="https://bdmdigital.com.br/home"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#0d1f3c] hover:bg-[#162d56] text-white text-sm font-bold rounded-lg transition-all duration-200 hover:shadow-lg w-full sm:w-auto whitespace-nowrap"
+              >
+                Saiba mais →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Meta Agro card */}
+        <div className="bg-white border-2 border-[#f0b429]/60 rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 mt-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <MetaAgroLogo />
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 min-w-0">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-1.5 bg-[#f0b429]/15 border border-[#f0b429]/40 text-[#0a2614] text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-3">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#f0b429">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                PARCERIA ACECAN
+              </div>
+
+              <h3
+                className="font-display text-[#0a2614] mb-2"
+                style={{ fontFamily: 'Fraunces, serif', fontWeight: 800, fontSize: 'clamp(1.15rem, 2vw, 1.4rem)' }}
+              >
+                Meta Agro
+              </h3>
+              <p className="text-gray-500 text-sm leading-relaxed max-w-2xl">
+                Parceria para o agronegócio de Canarana. A Meta Agro oferece soluções e produtos para o
+                produtor rural, unindo tecnologia e atendimento próximo para impulsionar os resultados
+                do campo.
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="flex-shrink-0 w-full sm:w-auto">
+              <a
+                href="https://www.metaagro.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#0d1f3c] hover:bg-[#162d56] text-white text-sm font-bold rounded-lg transition-all duration-200 hover:shadow-lg w-full sm:w-auto whitespace-nowrap"
